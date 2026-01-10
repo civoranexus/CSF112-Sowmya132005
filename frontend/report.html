@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cybercrime Report – CyberThana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <h2>Cybercrime Reporting Form</h2>
+    <p>Please fill in the details below to report a cybercrime incident.</p>
+
+    <form>
+
+        <!-- Crime Type -->
+        <label for="crimeType">Type of Cybercrime:</label><br>
+        <select id="crimeType" name="crimeType" required>
+            <option value="">-- Select Crime Type --</option>
+            <option value="financial_fraud">Financial Fraud</option>
+            <option value="identity_theft">Identity Theft</option>
+            <option value="cyber_bullying">Cyber Bullying</option>
+        </select>
+        <br><br>
+
+        <!-- Incident Description -->
+        <label for="description">Incident Description:</label><br>
+        <textarea id="description" name="description" rows="5" placeholder="Describe the incident briefly" required></textarea>
+        <br><br>
+
+        <!-- Date of Incident -->
+        <label for="incidentDate">Date of Incident:</label><br>
+        <input type="date" id="incidentDate" name="incidentDate" required>
+        <br><br>
+
+        <!-- Evidence Upload -->
+        <label for="evidence">Upload Evidence (optional):</label><br>
+        <input type="file" id="evidence" name="evidence">
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Report</button>
+
+    </form>
+
+</body>
+</html>
