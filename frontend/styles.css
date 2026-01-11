@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f5f7fa;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    max-width: 500px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+}
+
+button {
+    background-color: #2d89ef;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1b5fa7;
+}
