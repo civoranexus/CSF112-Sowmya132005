@@ -15,7 +15,8 @@
     <h2>Cybercrime Reporting Form</h2>
     <p>Please fill in the details below to report a cybercrime incident.</p>
 
-    <form>
+    <form onsubmit="submitReport(event)">
+
 
         <!-- Crime Type -->
         <label for="crimeType">Type of Cybercrime:</label><br>
@@ -46,6 +47,22 @@
         <button type="submit">Submit Report</button>
 
     </form>
-
+    
+    <script>
+        function submitReport(event) {
+            event.preventDefault();
+            fetch("http://localhost:5000/api/report", {
+                method: "POST"
+                })
+                .then(response => response.json())
+                .then(data => {
+                    alert("Report Submitted. Tracking ID: " + data.tracking_id);
+                    })
+                .catch(error => {
+                    console.error(error);
+                    alert("Unable to submit report");
+                    });
+            }
+        </script>
 </body>
 </html>
